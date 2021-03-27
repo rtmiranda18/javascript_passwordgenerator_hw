@@ -22,16 +22,6 @@ function generatePassword(){
   return temporary;
 }
 
-
-
-// function getPassword(passwordLength){
-//   temporary = "";
-//   for (var i = 0; i < passwordLength; i++) {
-//       temporary += keylist.charAt(Math.floor(Math.random))
-//   } 
-//   return temporary;
-// }
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();

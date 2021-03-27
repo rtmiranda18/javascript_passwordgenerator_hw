@@ -1,7 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var keylist = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
+var temporary = "";
 
-function generatePassword(passwordLength){
+//Add function generatePassword()
+function generatePassword(){
   var length = window.prompt("What is the length of the password?");
   if (length < 8 || length > 128){
     alert("Try again. Choose within the limit.");
@@ -14,11 +17,9 @@ function generatePassword(passwordLength){
 }
 
 function getPassword(passwordLength){
-  var keylist = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
-  var temporary = "";
   temporary = "";
   for (var i = 0; i < passwordLength; i++) {
-    temporary +=keylist.charAt(Math.floor(Math.random))
+      temporary += keylist.charAt(Math.floor(Math.random))
   } 
   return temporary;
 }

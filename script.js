@@ -2,9 +2,9 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  var limit = window.prompt("What is the limit of the password");
-  if (limit < 8 || limit > 128){
-    alert("Begin again and choose within limit");
+  var length = window.prompt("What is the length of the password?");
+  if (length < 8 || length > 128){
+    alert("Try again. Choose within the limit.");
     return;
   }
   var lowCase = window.confirm("Are the letters lower case?");
@@ -16,7 +16,7 @@ function generatePassword(){
 
 function getPassword() {
   if (lowCase,capLet,specChar,number) {
-    for ( i=0; i < limit + 1; i++) {
+    for ( i=0; i < length + 1; i++) {
     }
   }
 }

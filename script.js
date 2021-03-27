@@ -1,5 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var keylist = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
+var temporary = "";
 
 //Add function generatePassword()
 function generatePassword(){
@@ -12,18 +14,23 @@ function generatePassword(){
   var capLet = window.confirm("Are the letter's capitalized?");
   var specChar = window.confirm("Are there any special charachters?");
   var number = window.confirm("Are there any numbers?")
-}
-
-var keylist = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
-var temporary = "";
-
-function getPassword(passwordLength){
   temporary = "";
-  for (var i = 0; i < passwordLength; i++) {
-      temporary += keylist.charAt(Math.floor(Math.random))
+  for (var i = 0; i < length; i++) {
+      temporary += keylist.charAt(Math.floor(Math.random() * keylist.length))
   } 
+  console.log (temporary);
   return temporary;
 }
+
+
+
+// function getPassword(passwordLength){
+//   temporary = "";
+//   for (var i = 0; i < passwordLength; i++) {
+//       temporary += keylist.charAt(Math.floor(Math.random))
+//   } 
+//   return temporary;
+// }
 
 // Write password to the #password input
 function writePassword() {

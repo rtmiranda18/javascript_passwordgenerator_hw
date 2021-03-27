@@ -1,7 +1,5 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var keylist = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
-var temporary = "";
 
 //Add function generatePassword()
 function generatePassword(){
@@ -15,6 +13,9 @@ function generatePassword(){
   var specChar = window.confirm("Are there any special charachters?");
   var number = window.confirm("Are there any numbers?")
 }
+
+var keylist = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
+var temporary = "";
 
 function getPassword(passwordLength){
   temporary = "";
